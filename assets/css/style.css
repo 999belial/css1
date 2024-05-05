@@ -1,27 +1,45 @@
-h1 {
-    color: blue;
-    font-family: initial; /*вимикає спадкоємність*/
-    border: inherit; /*вмикає спадкоємність*/
-}
 
-.annotation { /* селектор классу*/
-    font-size: 10px;
+/*блокова модель*/
+body {
+    text-align: left;
 }
-#sub {
-    color: brown;
+p {
+    width: 500px;
+    height: 200px;
+    background-color: bisque;
+    border: 1px red solid;
+    padding: 20px;
+    margin: 50px;
+    display: inline-block;
+    text-align: initial;
+    vertical-align: top;
+    
 }
- body{
-    font-family: sans-serif;
-    border: 5px red solid;
-    text-align: center;
-    color: dimgray;
-}
-a{
+ a{
     color: inherit;
+    text-decoration: none;
+    border: 1px silver solid;
+    padding: 15px 20px;
+    width: 200px;
+    margin: 50px;
+    display: inline-block;
+ }
+
+.nav-link-item {
+   
+    display: inline;
+   
+}
+ul{
+    text-align: center;
 }
 
-/*Специфічність селекторів: 
-тег 0001
-класс 0010
-ід 0100
-інлайн 1000 - самий сильний*/
+/*a{
+    color: inherit;
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px green solid;
+    display: inline-block; /*стають поряд як рякдові але мають розміри як блокові*/
