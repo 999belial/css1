@@ -1,3 +1,27 @@
 h1 {
     color: blue;
+    font-family: initial; /*вимикає спадкоємність*/
+    border: inherit; /*вмикає спадкоємність*/
 }
+
+.annotation { /* селектор классу*/
+    font-size: 10px;
+}
+#sub {
+    color: brown;
+}
+ body{
+    font-family: sans-serif;
+    border: 5px red solid;
+    text-align: center;
+    color: dimgray;
+}
+a{
+    color: inherit;
+}
+
+/*Специфічність селекторів: 
+тег 0001
+класс 0010
+ід 0100
+інлайн 1000 - самий сильний*/
